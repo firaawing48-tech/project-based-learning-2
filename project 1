@@ -1,4 +1,4 @@
-safira@safira-VirtualBox:~$ mkdir -p Departemen/{Marketing,Engineering,HR}/{Documents,Archives}
+safira@safira-VirtualBox:~$ mkdir -p {Marketing,Engineering,HR}/{Documents,Archives}
 safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec mv {} Departemen/Marketing/Documents/ \;
 mv: './Departemen/Marketing/Documents/marketing1.txt' and 'Departemen/Marketing/Documents/marketing1.txt' are the same file
 mv: './Departemen/Marketing/Documents/marketing1.txt' and 'Departemen/Marketing/Documents/marketing2.txt' are the same file
