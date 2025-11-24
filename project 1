@@ -1,28 +1,30 @@
 safira@safira-VirtualBox:~$ mkdir -p {Marketing,Engineering,HR}/{Documents,Archives}
 safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec mv {} Departemen/Marketing/Documents/ \;
-mv: './Departemen/Marketing/Documents/marketing1.txt' and 'Departemen/Marketing/Documents/marketing1.txt' are the same file
-mv: './Departemen/Marketing/Documents/marketing1.txt' and 'Departemen/Marketing/Documents/marketing2.txt' are the same file
+mv: './Marketing/Documents/marketing1.txt' and 'Departemen/Marketing/Documents/marketing1.txt' are the same file
+mv: './Marketing/Documents/marketing1.txt' and 'Departemen/Marketing/Documents/marketing2.txt' are the same file
 safira@safira-VirtualBox:~$ find . -type f -name "*.doc" -exec mv {} Departemen/Engineering/Documents/ \;
-mv: './Departemen/Engineering/Documents/teknik1.doc' and 'Departemen/Engineering/Documents/teknik1.doc' are the same file
-mv: './Departemen/Engineering/Documents/teknik2.doc' and 'Departemen/Engineering/Documents/teknik2.doc' are the same file
+mv: './Engineering/Documents/teknik1.doc' and 'Departemen/Engineering/Documents/teknik1.doc' are the same file
+mv: './/Engineering/Documents/teknik2.doc' and 'Departemen/Engineering/Documents/teknik2.doc' are the same file
 safira@safira-VirtualBox:~$ find . -type f -name "*.ppt" -exec mv {} Departemen/HR/Documents/ \;
-mv: './Departemen/HR/Documents/HR1.ppt' and 'Departemen/HR/Documents/HR1.ppt' are the same file
-mv: './Departemen/HR/Documents/HR2.ppt' and 'Departemen/HR/Documents/HR2.ppt' are the same file
+mv: './HR/Documents/HR1.ppt' and 'Departemen/HR/Documents/HR1.ppt' are the same file
+mv: './HR/Documents/HR2.ppt' and 'Departemen/HR/Documents/HR2.ppt' are the same file
 safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec cp {} Departemen/Marketing/Archives/ \;
-cp: './Departemen/Marketing/Archives/marketing1.txt' and 'Departemen/Marketing/Archives/marketing1.txt' are the same file
-cp: './Departemen/Marketing/Archives/marketing2.txt' and 'Departemen/Marketing/Archives/marketing2.txt' are the same file
+cp: './Marketing/Archives/marketing1.txt' and 'Departemen/Marketing/Archives/marketing1.txt' are the same file
+cp: './Marketing/Archives/marketing2.txt' and 'Departemen/Marketing/Archives/marketing2.txt' are the same file
 safira@safira-VirtualBox:~$ find . -type f -name "*.doc" -exec cp {} Departemen/Engineering/Archives/ \;
-cp: './Departemen/Engineering/Archives/teknik1.doc' and 'Departemen/Engineering/Archives/teknik1.doc' are the same file
-cp: './Departemen/Engineering/Archives/teknik2.doc' and 'Departemen/Engineering/Archives/teknik2.doc' are the same file
+cp: './Engineering/Archives/teknik1.doc' and 'Departemen/Engineering/Archives/teknik1.doc' are the same file
+cp: './Engineering/Archives/teknik2.doc' and 'Departemen/Engineering/Archives/teknik2.doc' are the same file
 safira@safira-VirtualBox:~$ find . -type f -name "*.ppt" -exec cp {} Departemen/HR/Archives/ \;
-cp: './Departemen/HR/Archives/HR1.ppt' and 'Departemen/HR/Archives/HR1.ppt' are the same file
-cp: './Departemen/HR/Archives/HR2.ppt' and 'Departemen/HR/Archives
-safira@safira-VirtualBox:~$ sudo groupadd
-safira@safira-VirtualBox:~$ sudo groupadd
-safira@safira-VirtualBox:~$ sudo groupadd
-safira@safira-VirtualBox:~$ sudo chown -R :
-safira@safira-VirtualBox:~$ sudo chown -R :
-safira@safira-VirtualBox:~$ sudo chown -R :
-safira@safira-VirtualBox:~$ sudo chmod -R 
-safira@safira-VirtualBox:~$ sudo chmod -R 
-safira@safira-VirtualBox:~$ sudo chmod -R
+cp: './HR/Archives/HR1.ppt' and 'Departemen/HR/Archives/HR1.ppt' are the same file
+cp: './HR/Archives/HR2.ppt' and 'Departemen/HR/Archives
+safira@safira-VirtualBox:~$ sudo groupadd marketing 
+safira@safira-VirtualBox:~$ sudo groupadd engineering
+safira@safira-VirtualBox:~$ sudo groupadd hr
+safira@safira-VirtualBox:~$ sudo chown -R :marketing Marketing 
+safira@safira-VirtualBox:~$ sudo chown -R :engineering Engineering 
+safira@safira-VirtualBox:~$ sudo chown -R :hr HR
+safira@safira-VirtualBox:~$ sudo chmod -R 770 Marketing 
+safira@safira-VirtualBox:~$ sudo chmod -R 770 Engineering 
+safira@safira-VirtualBox:~$ sudo chmod -R 770 HR
+safira@safira-VirtualBox:~$ find . -type f -name "*pdf" -mtime +7
+
