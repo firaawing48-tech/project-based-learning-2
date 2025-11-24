@@ -27,4 +27,5 @@ safira@safira-VirtualBox:~$ sudo chmod -R 770 Marketing
 safira@safira-VirtualBox:~$ sudo chmod -R 770 Engineering 
 safira@safira-VirtualBox:~$ sudo chmod -R 770 HR
 safira@safira-VirtualBox:~$ find . -type f -name "*pdf" -mtime +7
-
+./documents/file4.pdf
+./documents/file3.pdf
