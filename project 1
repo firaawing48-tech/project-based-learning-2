@@ -1,20 +1,20 @@
 safira@safira-VirtualBox:~$ mkdir -p {Marketing,Engineering,HR}/{Documents,Archives}
-safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec mv {} Departemen/Marketing/Documents/ \;
+safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec mv {} Marketing/Documents/ \;
 mv: './Marketing/Documents/marketing1.txt' and 'Marketing/Documents/marketing1.txt' are the same file
 mv: './Marketing/Documents/marketing1.txt' and 'Marketing/Documents/marketing2.txt' are the same file
-safira@safira-VirtualBox:~$ find . -type f -name "*.doc" -exec mv {} Departemen/Engineering/Documents/ \;
+safira@safira-VirtualBox:~$ find . -type f -name "*.doc" -exec mv {} Engineering/Documents/ \;
 mv: './Engineering/Documents/teknik1.doc' and 'Engineering/Documents/teknik1.doc' are the same file
 mv: './/Engineering/Documents/teknik2.doc' and 'Engineering/Documents/teknik2.doc' are the same file
-safira@safira-VirtualBox:~$ find . -type f -name "*.ppt" -exec mv {} Departemen/HR/Documents/ \;
+safira@safira-VirtualBox:~$ find . -type f -name "*.ppt" -exec mv {} HR/Documents/ \;
 mv: './HR/Documents/HR1.ppt' and 'HR/Documents/HR1.ppt' are the same file
 mv: './HR/Documents/HR2.ppt' and 'HR/Documents/HR2.ppt' are the same file
-safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec cp {} Departemen/Marketing/Archives/ \;
+safira@safira-VirtualBox:~$ find . -type f -name "*.txt" -exec cp {} Marketing/Archives/ \;
 cp: './Marketing/Archives/marketing1.txt' and 'Marketing/Archives/marketing1.txt' are the same file
 cp: './Marketing/Archives/marketing2.txt' and 'Marketing/Archives/marketing2.txt' are the same file
-safira@safira-VirtualBox:~$ find . -type f -name "*.doc" -exec cp {} Departemen/Engineering/Archives/ \;
+safira@safira-VirtualBox:~$ find . -type f -name "*.doc" -exec cp {} Engineering/Archives/ \;
 cp: './Engineering/Archives/teknik1.doc' and 'Engineering/Archives/teknik1.doc' are the same file
 cp: './Engineering/Archives/teknik2.doc' and 'Engineering/Archives/teknik2.doc' are the same file
-safira@safira-VirtualBox:~$ find . -type f -name "*.ppt" -exec cp {} Departemen/HR/Archives/ \;
+safira@safira-VirtualBox:~$ find . -type f -name "*.ppt" -exec cp {} HR/Archives/ \;
 cp: './HR/Archives/HR1.ppt' and 'HR/Archives/HR1.ppt' are the same file
 cp: './HR/Archives/HR2.ppt' and 'HR/Archives
 safira@safira-VirtualBox:~$ sudo groupadd marketing 
